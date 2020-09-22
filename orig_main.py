@@ -6,12 +6,12 @@ import requests
 import sys
 
 try:
-    airtable = Airtable('app9sfGVyhyxORMnQ', 'Integromat_apps 01.09', api_key='keyHfCAyvjHyZhzev')
+    airtable = Airtable('app9sfGVyhyxORMnQ', 'Integromat_apps 01.09', api_key='')
     integromat_apps = []
     for entry in airtable.get_all(view='Grid view'):
         integromat_apps.append(entry['fields']['app_title'])
         
-    airtable = Airtable('appsZAkPyGMx1tXqm', 'Zapier_Posts', api_key='keyHfCAyvjHyZhzev')
+    airtable = Airtable('appsZAkPyGMx1tXqm', 'Zapier_Posts', api_key='')
 
     url = "https://zapier.com/app/login"
     options = Options()
