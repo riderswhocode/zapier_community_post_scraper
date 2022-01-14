@@ -8,13 +8,13 @@ import csv
 from datetime import date
 
 try:
-    #airtable = Airtable('app9sfGVyhyxORMnQ', 'Integromat_apps 01.09', api_key='keyHfCAyvjHyZhzev')
+    #airtable = Airtable('', 'Integromat_apps 01.09', api_key='')
     #integromat_apps = []
     #for entry in airtable.get_all(view='Grid view'):
         #print(entry['fields']['app_title'])
         #integromat_apps.append(entry['fields']['app_title'])
         
-    #airtable = Airtable('appQyV9xzHHex9upe', 'Post', api_key='keyoNjIRop3R26U3R')
+    #airtable = Airtable('', 'Post', api_key='')
 
     url = "https://zapier.com/app/login"
     options = Options()
@@ -26,7 +26,7 @@ try:
     driver.find_element_by_xpath('//input[@class="text-input login-form__input"]').send_keys('ariane.r@techflow.ai') # send_keys('Login Email-address')
     driver.find_element_by_xpath('//button/span/span/span[text()="Continue"]').click()
     t.sleep(3)
-    driver.find_element_by_xpath('//input[@class="text-input login-form__input"]').send_keys('D8yb7Ss35kzd') # send_keys('Login Password')
+    driver.find_element_by_xpath('//input[@class="text-input login-form__input"]').send_keys('') # send_keys('Login Password')
     driver.find_element_by_xpath('//button/span/span/span[text()="Continue"]').click()
     t.sleep(3)
 
